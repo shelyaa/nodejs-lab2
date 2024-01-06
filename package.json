@@ -2,9 +2,14 @@
   "name": "node.js-lab2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +23,10 @@
   "homepage": "https://github.com/shelyaa/nodejs-lab2#readme",
   "devDependencies": {
     "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "http": "0.0.1-security",
+    "url": "^0.11.3"
   }
 }
